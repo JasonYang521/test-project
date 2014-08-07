@@ -1,0 +1,32 @@
+﻿@charset "UTF-8";
+
+.glyphicon-bell:before {
+  content: "🔔";
+}
+.glyphicon-bookmark:before {
+  content: "🔖";
+}
+.glyphicon-briefcase:before {
+  content: "💼";
+}
+.glyphicon-calendar:before {
+  content: "📅";
+}
+.glyphicon-camera:before {
+  content: "📷";
+}
+.glyphicon-fire:before {
+  content: "🔥";
+}
+.glyphicon-lock:before {
+  content: "🔒";
+}
+.glyphicon-paperclip:before {
+  content: "📎";
+}
+.glyphicon-pushpin:before {
+  content: "📌";
+}
+.glyphicon-wrench:before {
+  content: "🔧";
+}

@@ -1,0 +1,230 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_BootstrapLayout.cshtml";
+}
+
+
+<body>
+    <div class="navbar navbar-inverse navbar-static-top">
+
+        <div class="container">
+
+            <!--<a href="#" class="navbar-brand no-padding"><div class="navbar-brand" style="background-image: url(/Content/Link.png)">Yang's Corner</div></a>-->
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand logo" style="height: 100%; background-position: center; font-family: 'Lobster'; font-size: 30px;"><b>Yang's</b> Corner</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+            </div>
+
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#" data-toggle="tab"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+                    <li><a href="/Home/Past"><span class="glyphicon glyphicon-user"></span>&nbsp;Resume</a></li>
+                    <li><a href="#" data-toggle="tab"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Portfolio</a></li>
+                    <li class="dropdown" data-toggle="tab">
+                        <a href="#" class="dropdown-toggle; menu-size" data-toggle="dropdown">Find Me!<b class="caret"></b></a>
+                        <ul class="dropdown-menu menusize">
+                            <li><a href="#" style="padding-left: 10px">
+                                <img src="/Content/themes/base/images/facebook_icon.png" height="20" width="20" />&nbsp;Facebook</a></li>
+                            <li><a href="#" style="padding-left: 10px">
+                                <img src="/Content/themes/base/images/twitter.png" height="20" width="20" />&nbsp;Twitter</a></li>
+                            <li><a href="#" style="padding-left: 10px">
+                                <img src="/Content/themes/base/images/linkedin.png" height="20" width="20" />&nbsp;Linked In</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Contacts</li>
+                            <li><a href="#" style="padding-left: 10px"><span class="glyphicon glyphicon-earphone"></span>&nbsp;My Info</a></li>
+                            <li><a href="#" style="padding-left: 10px"><span class="glyphicon glyphicon-earphone"></span>&nbsp;References</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search" action="/Home/Index" method="Post">
+                    <div class="form-group">
+                        <input type="text" name="FName" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+ 
+        <div class="carousel slider row" id="myCarousel">
+
+            <ol class="carousel-indicators col-12">
+                <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                <li data-slide-to="1" data-target="#myCarousel"></li>
+                <li data-slide-to="2" data-target="#myCarousel"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active" id="slide1">
+                    <img src="/Content/Link.png">
+                    <div class="carousel-caption">
+                        <h1>Yang's Resume</h1>
+                        <p>Here is my stuff</p>
+                    </div>
+                </div>
+                <div class="item" id="slide2">
+                    <img src="/Content/Link.png">
+                    <div class="carousel-caption">
+                        <h1>Yang's Resume</h1>
+                        <p>Here is my stuff</p>
+                    </div>
+                </div>
+                <div class="item" id="slide3">
+                    <img src="/Content/Link.jpg">
+                    <div class="carousel-caption">
+                        <h1>Yang's Resume</h1>
+                        <p>Here is my stuff</p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" data-slide="prev" href="#myCarousel">
+                <img src="/Content/themes/base/images/leftarrow.png" style="position: absolute; top: 50%; z-index: 5; display: inline-block;" height="20" width="20" />
+            </a>
+            <a class="right carousel-control" data-slide="next" href="#myCarousel">
+                <img src="/Content/themes/base/images/rightarrow.png" style="position: absolute; top: 50%; right: 50%; z-index: 5; display: inline-block;" height="20" width="20" />
+            </a>
+        </div>
+
+   <div class="container">
+        <div class="row" id="bigCallout">
+            <div class="col 12">
+                <div class="alert alert-success alert-block fade in" id="successAlert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h4>Success!</h4>
+                    <p>This will be appearing with Jquery!</p>
+                </div>
+                <div class="well well-small visible-xs">
+                    <a href="tel:949-232-6632" class="btn btn-large btn-block btn-default" id="callButton"><span class="glyphicon glyphicon-phone"></span>Give us a Call</a>
+                </div>
+
+                <div class="well">
+                    <div class="page-header">
+                        <h1>Computer Scientist <small>this is a page header sub</small></h1>
+                    </div>
+                    <p class="lead">
+                        THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!
+                    </p>
+                    <a class="btn btn-primary btn-lg" id="alertMe" role="button">Learn more</a>
+                    <a class="btn btn-primary btn-link" role="button">or a secondary link</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row" id="featuresHeading">
+            <div class="cols-12">
+                <h2>More Features</h2>
+                <p class="lead">
+                    THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!
+                </p>
+            </div>
+        </div>
+        <div class="row" id="features1">
+            <div class="col-sm-4" id="feature1">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Markup with HTML5</h3>
+                    </div>
+                    <img src="/Content/themes/base/images/linkFeatures.png" class="img-circle">
+                    <p>
+                        THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL
+                         INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!
+                    </p>
+                    <a href="#" target="_blank" class="btn btn-warning btn-block">Style it up with Bootstrap</a>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4" id="feature2">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Markup with HTML5</h3>
+                    </div>
+                    <img src="/Content/themes/base/images/linkFeatures.png" class="img-circle">
+                    <p>
+                        THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL
+                         INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!
+                    </p>
+                    <a href="#" target="_blank" class="btn btn-danger btn-block">Style it up with CSS3</a>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4" id="feature3">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Markup with HTML5</h3>
+                    </div>
+                    <img src="/Content/themes/base/images/linkFeatures.png" class="img-circle">
+                    <p>
+                        THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL
+                         INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!
+                    </p>
+                    <a href="#" target="_blank" class="btn btn-info btn-block">Style it up with HTML5</a>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="googleMaps">
+            <div class="col-sm-6">
+                <h3>Neat Tabbable Content</h3>
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <h4><span class="glyphicon glyphicon-map-marker"></span>Our Location<small> More like our favourite surf spot</small></h4>
+                            <iframe style="width: 100%" seamless src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=37+Splendor,+Irvine,+CA,+United+States&amp;aq=0&amp;oq=37+splendor+irvine+ca&amp;sll=49.891235,-97.15369&amp;sspn=49.21157,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=37+Splendor,+Irvine,+California+92618,+United+States&amp;t=m&amp;ll=33.690567,-117.744083&amp;spn=0.014283,0.01708&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                            <p>
+                                THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL
+                         INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!
+                            </p>
+                            <p>
+                                THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL
+                         INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!
+                            </p>
+                        </div>
+
+                        <div class="tab-pane" id="tab2">
+                            <h4><span class="glyphicon glyphicon-map-marker"></span>Our Location<small> More like our favourite surf spot</small></h4>
+                            <img src="http://placehold.it/140" class="thumbnail pull-left">
+                            <p>
+                                THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL
+                         INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!
+                            </p>
+                            <p>
+                                THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL
+                         INFORMATION THAT JASON HAS NOT YET THOUGH OF!THIS IS MEANT TO HOLD SOME COOL INFORMATION THAT JASON HAS NOT YET THOUGH OF!
+                            </p>
+
+                            <hr>
+                            <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click for an Modal Window!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+        </div>
+
+    </div>
+         
+
+</body>
+
+

@@ -1,0 +1,171 @@
+﻿
+footer, nav, section {
+    display: block;
+
+}
+title {
+    font-size: 3.2em;
+    font-weight: bold;
+    color: #191919;
+    font-family:"Comic Sans MS";
+}
+@font-face
+{
+    font-family: "Lobster";
+    src: url('/Content/fonts/Lobster.woff');
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+body {
+    padding-bottom:20px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+}
+header {
+ float:right;
+
+}
+slide1 {
+        background-image: url(/Content/Linkbutton.png);
+}
+slide2 {
+        background-image: url(/Content/Linkbutton.png);
+}
+slide3 {
+        background-image: url(/Content/Linkbutton.png);
+}
+#d3 {
+    background-image: url(/Content/section-crusader.jpg);
+    width: 2000px;
+    height: 720px;
+    position:relative;
+}
+#video {
+    position:absolute;
+    margin-left:367px;
+    top:34px;
+}
+#crusader-male-video {
+    
+}
+ul
+{        
+    list-style-type:circle;
+    text-decoration-color:#FDD017;
+    color: #FDD017;
+}
+li {
+    color:#FDD017;
+}
+h2{
+    font-size: 3.2em;
+    font-weight: bold;
+    color: #FDD017;
+    font-family:"Comic Sans MS";
+}
+.menusize {
+    width: 120px;
+    min-width: 120px;
+}
+.listitem {
+ padding: 0px, 0px;
+}
+a.logo
+{
+    color: lightskyblue !important;
+    height:100%; 
+    font-family:'Lobster'; 
+}
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.c {
+    background-image: url(/Content/Linkbutton.png);
+    background-position-y: center;
+    margin-top:0;
+    padding:20px 20px 10px 20px;
+}
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.alert {
+    margin-top: 20px;
+    display: none;
+}
+.nav-padding {
+    padding: 0px 30px 0px 30px;
+}
+#callButton {
+    background-color: #333333;
+    color: white;
+}
+.well .page-header {
+    margin-top:0;
+}
+.well .page-header h1{
+    margin-top:0;
+}
+.well {
+    margin: 20px 0;
+}
+.tabbable img.thumbnail {
+    margin: 0 20px 10px 0;
+}
+#features1 img {
+        width:100%;
+        height:100%;
+}
+@media (max-width: 300px) {
+    .logo {
+        width: 70%;
+        height:70%;
+    }
+}
+
